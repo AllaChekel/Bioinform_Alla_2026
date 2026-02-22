@@ -1,0 +1,157 @@
+    1  wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+    2  conda init
+    3  source ~/.bashrc
+    4  conda init
+    5  conda activate
+    6  bash Miniconda3-latest-Linux-x86_64.sh
+    7  conda init
+    8  conda init --reverse $SHELL
+    9  cd /home/miptstudentka/miniconda3
+   10  ls
+   11  ./uninstall.sh
+   12  cd ~
+   13  bash Miniconda3-latest-Linux-x86_64.sh
+   14  wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+   15  bash Miniconda3-latest-Linux-x86_64.sh
+   16  rm -r /home/miptstudentka/miniconda3
+   17  bash Miniconda3-latest-Linux-x86_64.sh
+   18  conda init
+   19  ls -l /home/miptstudentka/miniconda3/bin/conda
+   20  ls /home/miptstudentka/miniconda3/bin/conda
+   21  ls /home/miptstudentka/miniconda3/
+   22  ls /home/miptstudentka/miniconda3/bin/conda/shell
+   23  ls /home/miptstudentka/miniconda3/shell
+   24  ./home/miptstudentka/miniconda3/_conda
+   25  cd /home/miptstudentka/miniconda3/
+   26  ls bin
+   27  ls condabin
+   28  ls condabin/conDA
+   29  ls condabin/conda
+   30  ls x86_64-conda-linux-gnu
+   31  ls pkgs
+   32  ls
+   33  ls envs
+   34  ls man
+   35  conda init
+   36  conda env list
+   37  conda create -n my_project python=3.9
+   38  conda activate my_project
+   39  python --version
+   40  conda deactivate
+   41  conda create -n legacy_projects python=3.6
+   42  conda install numpy=1.16 pandas=0.24
+   43  pip install biopython==1.73
+   44  source ~/.bashrc
+   45  conda --version
+   46  conda init
+   47  pip --version
+   48  pip install biopython==1.73
+   49  conda install -c conda-forge biopython=1.73
+   50  conda install numpy=1.16 pandas=0.24
+   51  python --version
+   52  conda create -n seminar_3
+   53  conda activate seminar_
+   54  conda activate seminar_3
+   55  conda install numpy=1.16 pandas=0.24
+   56  conda env export > C:\Users\Admin\Downloads\my_env.yml
+   57  conda env export > mnt/c/Users/Admin/Downloads/my_env.yml
+   58  conda deactivate
+   59  conda env list
+   60  cd ~
+   61  git clone git@github.com:AllaChekel/Bioinform_Alla_2026.git
+   62  ls -la ~/.ssh
+   63  ssh-keygen -t ed25519 -C "mipstudentka@example.com"
+   64  ls -la ~/.ssh
+   65  eval "$(ssh-agent -s)"
+   66  ssh-add ~/.ssh/id_ed25519
+   67  cat ~/.ssh/id_ed25519.pub
+   68  ssh -T git@github.com
+   69  cd ~
+   70  git clone git@github.com:AllaChekel/Bioinform_Alla_2026.git
+   71  cd ~/Bioinform_Alla_2026
+   72  pwd
+   73  realpath README.md
+   74  pwd
+   75  realpath README.md
+   76  git status
+   77  git add .
+   78  git status
+   79  git commit -m "Init"
+   80  git push origin main
+   81  git push origin master
+   82  git status
+   83  git commit -m "Init"
+   84  git config user.name "Alla Chekel"
+   85  git config user.email "chekel.aa@phystech.edu"
+   86  git commit -m "Init"
+   87  git push origin main
+   88  mkdir -p linux_task/data/raw
+   89  cd linux_task/data/raw
+   90  pwd
+   91  touch sample1.tsv sample2.tsv sample3.tsv
+   92  echo -e "GeneID\tExpression_Value" > sample1.tsv
+   93  cat sample1.tsv
+   94  cd ~/Bioinform_Alla_2026
+   95  git status
+   96  git add linux_task/
+   97  git commit -m "Create raw data structure"
+   98  git push origin main
+   99  git loc
+  100  git log
+  101  cat > sequencing_summary.txt << EOF
+run_id: RUN001
+date: 2026-02-18
+sample: sample1
+platform: Illumina
+read_length: 150
+total_reads: 1024
+sample: sample2
+total_reads: 2048
+sample: sample3
+total_reads: 4096
+EOF
+
+  102  cat sequencing_summary.txt
+  103  grep "sample" sequencing_summary.txt > samples_list.txt
+  104  cat samples_list.txt
+  105  grep -c "sample" sequencing_summary.txt | xargs -I {} echo "Total samples found: {}" >> samples_list.txt
+  106  tail -n 5 samples_list.txt
+  107  cd ~/Bioinform_Alla_2026
+  108  git status
+  109  git add linux_task/
+  110  git commit -m "Add sample list and count"
+  111  git push origin main
+  112  git log
+  113  mv samples_list.txt sequencing_summary.txt linux_task/data/raw/
+  114  ls linux_task/data/raw/
+  115  git add linux_task/
+  116  git status
+  117  git commit -m "Add sample list and count"
+  118  git push origin main
+  119  git log
+  120  cd ~/Bioinform_Alla_2026
+  121  ls -la
+  122  tree linux_task/
+  123  ls -la linux_task/data/raw/
+  124  ls -la linux_task/data/raw/ | grep sample3
+  125  cd ~/Bioinform_Alla_2026
+  126  git add linux_task/
+  127  git status
+  128  git commit -m "Add sample list and count"
+  129  git push origin main
+  130  git branch git-practice
+  131  git checkout git-practice
+  132  echo "This is very important data." > important_note.txt
+  133  git add important_note.txt
+  134  git commit -m "Add important note"
+  135  rm important_note.txt
+  136  ls -la | grep important
+  137  git status
+  138  git checkout important_note.txt
+  139  cat important_note.txt
+  140  git status
+  141  echo "git checkout important_note.txt" > git_command.txt
+  142  cat git_command.txt
+  143  git add git_command.txt
+  144  git commit -m "Restore deleted file"
+  145  history > command_history.txt
