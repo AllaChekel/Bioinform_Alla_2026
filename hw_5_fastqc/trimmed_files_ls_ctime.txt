@@ -1,0 +1,7 @@
+total 71760
+drwxr-xr-x. 2 studfbmf02_19 fbmf        4 May  3 16:13 .
+drwxr-xr-x. 4 studfbmf02_19 fbmf        2 May  3 14:26 ..
+-rw-r--r--. 1 studfbmf02_19 fbmf  1315087 May  3 16:13 ERR14230573_trimmed.fastq.gz
+-rw-r--r--. 1 studfbmf02_19 fbmf  9592833 May  3 16:13 ERR14230582_trimmed.fastq.gz
+-rw-r--r--. 1 studfbmf02_19 fbmf 43495797 May  3 16:13 ERR14230586_trimmed.fastq.gz
+-rw-r--r--. 1 studfbmf02_19 fbmf 19077046 May  3 16:13 ERR14230595_trimmed.fastq.gz

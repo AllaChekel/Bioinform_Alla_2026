@@ -1,0 +1,11 @@
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+data/
+logs/
+results/fastqc_raw/
+results/fastqc_trimmed/
+results/fastp/
+__pycache__/
+.ipynb_checkpoints/
